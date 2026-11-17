@@ -53,16 +53,16 @@ class _SharoCaptainScreenState extends State<SharoCaptainScreen> {
 
   Map<String, dynamic>? currentDelivery = {
     'id': 'SHR-9182',
-    'storeName': 'چێشتخانەی کەیف (Keyf)',
-    'storeAddress': 'شەقامی سالمی - تەنیشت هۆتێل سلێمانی پاڵاس',
+    'storeName': 'کەبابی دەربەندیخان (Darbandikhan)',
+    'storeAddress': 'دەربەندیخان - ناو بازاڕ - تەنیشت فلکەی ناوەند',
     'storePhone': '0770 123 4567',
     'customerName': 'محەمەد کەمال',
-    'customerAddress': 'تووی مەلیك - کۆڵانی ٣٢، نزیک مزگەوت',
+    'customerAddress': 'دەربەندیخان - گەڕەکی سەرسیر، کۆڵانی ١٤',
     'customerPhone': '0770 987 6543',
-    'fee': 3500,
+    'fee': 1000,
     'totalCashToCollect': 33000,
-    'distance': '3.2 کم',
-    'estimatedTime': '14 خولەک',
+    'distance': '1.2 کم',
+    'estimatedTime': '10 خولەک',
   };
 
   @override
@@ -90,10 +90,10 @@ class _SharoCaptainScreenState extends State<SharoCaptainScreen> {
         currentDelivery = {
           'id': o['id'] ?? 'SHR-7712',
           'storeName': o['shopName'] ?? 'چێشتخانە',
-          'storeAddress': 'شەقامی سالمی - سلێمانی',
+          'storeAddress': 'دەربەندیخان - ناو بازاڕ',
           'storePhone': '0770 123 4567',
           'customerName': o['customerName'] ?? 'کڕیاری شاڕۆ',
-          'customerAddress': o['customerLocation'] ?? 'سلێمانی - تووی مەلیك',
+          'customerAddress': o['customerLocation'] ?? 'دەربەندیخان - گەڕەکی سەرسیر',
           'customerPhone': o['customerPhone'] ?? '0770 987 6543',
           'fee': 3500,
           'totalCashToCollect': o['total'] ?? 16000,
@@ -171,7 +171,7 @@ class _SharoCaptainScreenState extends State<SharoCaptainScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('شاڕۆ کاپتن | لۆجستیك', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
-                Text('ڕێبین ئەحمەد (کاپتنی سلێمانی)', style: TextStyle(fontSize: 10, color: Colors.white70)),
+                Text('ڕێبین ئەحمەد (کاپتنی دەربەندیخان)', style: TextStyle(fontSize: 10, color: Colors.white70)),
               ],
             ),
           ],
@@ -491,7 +491,7 @@ class _SharoCaptainScreenState extends State<SharoCaptainScreen> {
                   children: [
                     Text('ڕێبین ئەحمەد خدر', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
                     Text('ماتۆڕسکیل هۆندا ١٥٠ سپی', style: TextStyle(color: Colors.grey, fontSize: 12)),
-                    Text('مۆڵەت: کاتی سلێمانی - ٢٩١٨', style: TextStyle(color: Colors.grey, fontSize: 11)),
+                    Text('مۆڵەت: دەربەندیخان - ٢٩١٨', style: TextStyle(color: Colors.grey, fontSize: 11)),
                   ],
                 ),
               ],
